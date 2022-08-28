@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* home */
+#home{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: #333;
+    background: linear-gradient(185deg, rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.384)), url('./assets/home--bg.jpg');
+    background-size: cover;
+}
+/* home -- logo */
+.logo--header{
+    height: 70px;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    z-index: 1;
+}
+/* home -- language-selector */
+.language{
+    position: absolute;
+    right: 200px;
+    top: 30px;
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 8px 10px 8px 10px;
+    color: #fff;
+    font: normal 400 14px/21px sans-serif;
+}
+.language option{
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+.sign-in-btn{
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    padding: 7px 17px 7px 17px;
+    font: normal 400 16px/21px sans-serif;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* home--content */
+.page--content{
+    position: absolute;
+    left: 25%;
+    top: 35%;
+    color: #fff;
+}
+.page--content h1{
+    font: normal 600 50px/55px sans-serif;
+    width: 600px;
+    text-align: center; 
+    margin-left: 15px;
+}
+.page--content h3{
+    font: normal 400 26px/72px sans-serif;
+    text-align: center;
+}
+.page--content h5{
+    font:normal 400 20px/54px sans-serif;
+    text-align: center; 
+}
+.content-search{
+    display: flex;
+}
+.content-search input{
+    width: 65%;
+    padding: 10px;
+    outline: none;
+    font: normal 500 16px/20px sans-serif;
+    color: #8c8c8c;
+}
+.content-search input::placeholder{
+    font: normal 500 16px/20px sans-serif;
+    color: #8c8c8c;
+}
+.content-search button{
+    width: 35%;
+    padding: 10px;
+    font: normal 400 26px/36px sans-serif;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    cursor: pointer;
+}
+.content-search button:hover{
+    background: #bb0a12;
+}
