@@ -2,97 +2,166 @@
     margin: 0;
     padding: 0;
 }
+html{
+    -webkit-font-smoothing: antialiased;
+}
+body{
+    background: #333;
+}
+button{
+    cursor: pointer;
+}
 /* home */
+/* home--header */
 #home{
-    position: absolute;
+    position: relative;
+    display: flex;
+    background: radial-gradient(rgba(0, 0, 0, 0.511) 40%, rgba(0, 0, 0, 0.703), rgba(0, 0, 0, 0.67)), url('./assets/home--bg.jpg') center/cover;
     width: 100vw;
     height: 100vh;
-    left: 0;
-    top: 0;
-    background: #333;
-    background: linear-gradient(185deg, rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.384)), url('./assets/home--bg.jpg');
-    background-size: cover;
 }
-/* home -- logo */
+header nav{
+    display: flex;
+}
 .logo--header{
-    height: 70px;
     position: absolute;
-    top: 10px;
-    left: 40px;
-    z-index: 1;
+    top: 12px;
+    left: 46px;
+    width: 160px;
 }
-/* home -- language-selector */
 .language{
     position: absolute;
-    right: 200px;
-    top: 30px;
+    right: 180px;
+    top: 22px;
     background: transparent;
-    border: 2px solid #fff;
-    padding: 8px 10px 8px 10px;
+    border: 0.5px solid #fff;
     color: #fff;
-    font: normal 400 14px/21px sans-serif;
+    font: normal 400 16px/27px sans-serif;
+    padding: 5px 12px 5px 12px;
 }
 .language option{
     background-color: #333;
     color: #fff;
-    border: none;
 }
 .sign-in-btn{
     position: absolute;
-    top: 30px;
     right: 80px;
-    padding: 7px 17px 7px 17px;
-    font: normal 400 16px/21px sans-serif;
-    color: #fff;
-    background-color: #e50914;
+    top: 18px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-/* home--content */
-.page--content{
-    position: absolute;
-    left: 25%;
-    top: 35%;
+    border-radius: 3px;
+    background: #e50914;
+    font: normal 400 16px/27px sans-serif;
     color: #fff;
+    padding: 5px 17px 5px 17px;
 }
-.page--content h1{
-    font: normal 600 50px/55px sans-serif;
-    width: 600px;
-    text-align: center; 
-    margin-left: 15px;
-}
-.page--content h3{
-    font: normal 400 26px/72px sans-serif;
+
+.page--content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25%;
     text-align: center;
 }
-.page--content h5{
-    font:normal 400 20px/54px sans-serif;
-    text-align: center; 
+h1{
+    color: #fff;
+    font: normal 550 50px/55px sans-serif;
+}
+h3{
+    color: #fff;
+    font: normal 400 26px/36px sans-serif;
+    padding: 20px;
+}
+h5{
+    color: #fff;
+    font: normal 300 20px/31px sans-serif;
+    text-align: center;
 }
 .content-search{
     display: flex;
+    gap: 0;
+    width: 660px;
+    margin-top: 10px;
 }
 .content-search input{
     width: 65%;
-    padding: 10px;
+    padding: 20px;
     outline: none;
-    font: normal 500 16px/20px sans-serif;
+    border: none;
+    font: normal 300 16px/20px sans-serif;
     color: #8c8c8c;
 }
-.content-search input::placeholder{
-    font: normal 500 16px/20px sans-serif;
-    color: #8c8c8c;
-}
+
 .content-search button{
     width: 35%;
-    padding: 10px;
-    font: normal 400 26px/36px sans-serif;
+    background: #e50914;
     color: #fff;
-    background-color: #e50914;
+    font: normal 500 26px/35px sans-serif;
+    text-align: center;
     border: none;
-    cursor: pointer;
 }
-.content-search button:hover{
+.content-search > button:hover{
+    transition-duration: 200ms;
     background: #bb0a12;
+}
+
+/* section two */
+.sect{
+    position: relative;
+    width: 100vw;
+    height: 65vh;
+    background: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+.sect img{
+    width: 40%;
+}
+.sect-txt-content{
+    width: 45%;
+}
+.sect-txt-content > h3{
+    margin-left: -20px;
+}
+/* FAQ Section */
+.faq--sect{
+    flex-direction: column;
+    height: fit-content;
+}
+.sub-sect-faq{
+    padding: 50px 0 50px 0;
+}
+.faq--grid{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 40px 0 40px 0;
+}
+.faq--ques{
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 15px 20px 15px 20px;
+    width: 110%;
+    margin-left: -50px;
+    font: normal 400 26px/42px sans-serif;
+    align-items: center;
+}
+.footnote{
+    flex-direction: column;
+    justify-content: flex-start;
+    height: fit-content;
+}
+.footnote h5{
+    padding: 10px;
+}
+.github--link{
+    text-decoration: none;
+    color: #8c8c8c;
+}
+.github--link:hover{
+    font-style: italic;
 }
