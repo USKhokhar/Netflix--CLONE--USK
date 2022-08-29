@@ -1,0 +1,131 @@
+/* Mobile Style */
+html{
+    margin: 0;
+    padding: 0;
+    background: #333;
+}
+@media only screen and (max-width: 680px){
+    #home{
+        position: relative;
+        display: flex;
+        background: radial-gradient(rgba(0, 0, 0, 0.511) 40%, rgba(0, 0, 0, 0.703), rgba(0, 0, 0, 0.67)), url('./assets/home--bg.jpg') top center/cover;
+        width: 100vw;
+        height: 70vh;
+    }
+    .logo--header{
+        position: absolute;
+        top: 12px;
+        left: 6px;
+        width: 120px;
+    }
+    .language{
+        position: absolute;
+        right: 110px;
+        top: 25px;
+        background: transparent;
+        border: 0.5px solid #fff;
+        color: #fff;
+        font: normal 300 12px/21px sans-serif;
+        padding: 3px 7px 3px 7px;
+    }
+    .sign-in-btn{
+        position: absolute;
+        right: 40px;
+        top: 22px;
+        border: none;
+        border-radius: 3px;
+        background: #e50914;
+        font: normal 400 12px/21px sans-serif;
+        color: #fff;
+        padding: 3px 12px 3px 12px;
+    }
+    .page--content{
+        padding: 5%;
+        width: 375px;
+    }
+    h1{
+        color: #fff;
+        font: normal 550 28px/32px sans-serif;
+        text-align: center;
+    }
+    h3{
+        color: #fff;
+        font: normal 400 20px/26px sans-serif;
+        padding: 10px;
+        text-align: center;
+    }
+    h5{
+        width: 360px;
+        color: #fff;
+        font: normal 300 18px/21px sans-serif;
+        text-align: center;
+    }
+        
+    .content-search{
+        flex-direction: column;
+        gap: 20px;
+        width: 360px;
+        margin-top: 10px;
+    }
+    .content-search input{
+        width: 90%;
+        padding: 10px;
+        font: normal 300 14px/20px sans-serif;
+    }
+
+    .content-search button{
+        width: 50%;
+        font: normal 500 16px/35px sans-serif;
+        margin-left: 100px;
+    }
+    .sect{
+        flex-direction: column;
+        height: 60vh;
+        padding: 0px;
+    }
+        
+    .sect img{
+        width: 60%;
+    }
+    .sect-txt-content{
+        width: 90%;
+    }
+    .sect-txt-content > h3{
+        margin-left: 0px;
+        text-align: center;
+    }
+        
+    .faq--sect{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .faq--grid{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0 20px 0;
+    }
+    .faq--ques{
+        justify-content: space-between;
+        font: normal 400 18px/22px sans-serif;
+        align-items: center;
+    }
+    .question{
+        padding-left: 25px;
+    }
+    .faq--ques span{
+        padding-right: 25px;
+    }
+
+    
+    .footnote{
+        flex-direction: column;
+        justify-content: flex-start;
+        height: fit-content;
+    }
+    
+    .footnote h5{
+        padding: 5px;
+    }
+
+}
